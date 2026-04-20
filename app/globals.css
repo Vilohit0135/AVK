@@ -94,7 +94,7 @@ p{margin:0 0 1em}
 .kicker{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);margin-bottom:22px}
 .kicker .dot{width:6px;height:6px;border-radius:50%;background:var(--sage)}
 .img-placeholder{background:repeating-linear-gradient(135deg,transparent 0 10px,rgba(0,0,0,0.04) 10px 11px),var(--paper-3);display:flex;align-items:center;justify-content:center;color:var(--muted);font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:0.14em;text-align:center;padding:20px;border-radius:var(--radius)}
-.card{background:color-mix(in oklab, #fff 92%, transparent);border:1px solid var(--line);border-radius:var(--radius);padding:28px;transition:all .2s;backdrop-filter:blur(6px)}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:28px;transition:all .2s}
 .card:hover{border-color:var(--line-2)}
 .card-linky{cursor:pointer}
 .card-linky:hover{transform:translateY(-2px)}
