@@ -77,8 +77,8 @@ export default function SpecialityPage({ slug, label }: { slug: string; label: s
       <section className="section" style={{ background: "var(--paper-2)" }}><div className="container">
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeUp}>
           <Kicker>How we treat</Kicker>
-          <h2 style={{ marginBottom: 12 }}>A four-stage programme.</h2>
-          <p style={{ maxWidth: "56ch", color: "var(--ink-3)", marginBottom: 40 }}>Every {s.name} patient moves through the same structured pathway. Duration varies — some cases are resolved in weeks, others take three to six months.</p>
+          <h2 style={{ marginBottom: 12 }}>A five-stage programme.</h2>
+          <p style={{ maxWidth: "56ch", color: "var(--ink-3)", marginBottom: 40 }}>Every {s.name} patient moves through the same structured pathway — from first consultation to ongoing wellness support. Duration varies; most conditions need 12 to 30 sessions over several weeks to a few months.</p>
         </motion.div>
         <motion.div className="timeline" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-40px" }} variants={staggerContainer}>
           {s.approach.map(([t, d], i) => (

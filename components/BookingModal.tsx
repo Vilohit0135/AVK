@@ -32,8 +32,8 @@ export default function BookingModal() {
     return out;
   }, []);
 
-  const slots = ["9:00", "10:00", "11:00", "12:00", "15:00", "16:00", "17:00", "18:00"];
-  const taken = ["10:00", "16:00"];
+  const slots = ["10:30", "11:30", "12:30", "15:00", "16:00", "17:00", "18:00", "19:00"];
+  const taken = ["11:30", "16:00"];
   const options = [
     { slug: "consultation", name: "General Consultation", sub: "45 min · First visit" },
     ...specialities.map((s) => ({ slug: s.slug, name: s.name, sub: s.tagline.split(" — ")[0] || s.tagline })),
@@ -82,7 +82,7 @@ export default function BookingModal() {
           </>}
           {step === 1 && <>
             <h3>Pick a date</h3>
-            <p className="sub">Sundays are by appointment only — please call us for Sunday visits.</p>
+            <p className="sub">We're closed on Sundays — Monday to Saturday only.</p>
             <div className="date-grid">
               {dates.map((dd, i) => (
                 <button key={i} className={"date-tile" + (data.date && data.date.date === dd.date && data.date.month === dd.month ? " selected" : "")} onClick={() => setData((d) => ({ ...d, date: dd, slot: null }))}>

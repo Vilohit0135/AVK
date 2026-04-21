@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { clinic, specialities, testimonials } from "@/lib/data";
+import { clinic, specialities, testimonials, coreComponents } from "@/lib/data";
 import { Button, Kicker, ImgPH } from "@/components/ui";
 import Icon from "@/components/Icon";
 import { useBooking } from "@/components/BookingContext";
@@ -49,13 +49,13 @@ export default function HomePage() {
           <div className="hero-inner">
             <div>
               <motion.div initial="hidden" animate="visible" custom={0} variants={fadeUp}>
-                <Kicker>Ayurvedic Clinic · Bangalore · Est. 2011</Kicker>
+                <Kicker>Ayurvedic Clinic · Bangalore · Est. 2022</Kicker>
               </motion.div>
               <motion.h1 className="h-display" initial="hidden" animate="visible" custom={1} variants={fadeUp}>
-                Classical Ayurveda,<br/>for modern <span className="em">lives.</span>
+                Healing that reaches deeper.<br/>Relief that <span className="em">lasts longer.</span>
               </motion.h1>
               <motion.p className="hero-sub" initial="hidden" animate="visible" custom={2} variants={fadeUp}>
-                Specialised care across Spine & Joint, Skin Ailments, Women & Men Wellness, and Geriatric & Family Medicine — in one unhurried clinic in Akshayanagar.
+                Non-surgical Ayurvedic care for Spine &amp; Joint, Skin, Wellness and Geriatric concerns — through classical Marma therapy, herbal bandaging and personalized protocols.
               </motion.p>
               <motion.div className="hero-ctas" initial="hidden" animate="visible" custom={3} variants={fadeUp}>
                 <Button variant="sage" size="lg" onClick={() => openBooking()}>Book appointment</Button>
@@ -78,8 +78,8 @@ export default function HomePage() {
                 transition={{ delay: 0.8, duration: 0.5 }}
               >
                 <span className="eyebrow">Our promise</span>
-                <h4>Unhurried consultation.</h4>
-                <p>First visits are 45 minutes — no packages, no pressure.</p>
+                <h4>Root-cause, non-invasive.</h4>
+                <p>No cuts, no injections, no long-term painkillers. Just authentic Ayurveda — done properly.</p>
               </motion.div>
             </motion.div>
           </div>
@@ -112,6 +112,26 @@ export default function HomePage() {
       </section>
 
       <section className="section">
+        <div className="container">
+          <motion.div
+            style={{ display: "flex", alignItems: "end", justifyContent: "space-between", marginBottom: 40, gap: 20, flexWrap: "wrap" }}
+            initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} variants={fadeUp} custom={0}
+          >
+            <div><Kicker>How we treat</Kicker><h2>Four core components,<br/>one personalized plan.</h2></div>
+            <p style={{ maxWidth: "42ch", color: "var(--ink-3)", margin: 0 }}>Every treatment plan at AVK combines these four elements — calibrated to the individual, the condition and the constitution.</p>
+          </motion.div>
+          <motion.div className="grid-4" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={staggerContainer}>
+            {coreComponents.map(([t, d]) => (
+              <motion.div key={t} className="card" variants={staggerItem}>
+                <h4 style={{ fontFamily: "var(--serif)", fontSize: 22, marginBottom: 10 }}>{t}</h4>
+                <p style={{ color: "var(--ink-3)", margin: 0, fontSize: 14.5 }}>{d}</p>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      <section className="section" style={{ background: "var(--paper-2)" }}>
         <div className="container">
           <div className="grid-2" style={{ gap: 64, alignItems: "center" }}>
             <motion.div
