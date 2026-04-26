@@ -7,7 +7,7 @@ export default function SpecialistsPage() {
       <section className="page-head"><div className="container">
         <span className="eyebrow">Our Physician</span>
         <h1>One physician. Fifteen years of dedicated practice.</h1>
-        <p className="lede">Dr. Akshata Shetty holds a BAMS qualification and leads every consultation at AVK — across all four specialities.</p>
+        <p className="lede">Dr. Akshata Shetty holds a BAMS qualification and leads every consultation at AVK — across all three specialities.</p>
       </div></section>
       <section className="section"><div className="container">
         {specialists.map((m) => (

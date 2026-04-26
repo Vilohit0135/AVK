@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "AVK Ayurvedic Clinic & Pharmacy — Bangalore",
-  description: "Specialised Ayurvedic care in Bangalore — Spine & Joint, Skin Ailments, Women & Men Wellness, and Geriatric Care. In Akshayanagar since 2008.",
+  description: "Specialised Ayurvedic care in Bangalore — Spine & Joint, Skin Ailments, and Geriatric Care. In Akshayanagar since 2008.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

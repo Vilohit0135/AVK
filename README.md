@@ -14,7 +14,6 @@ nextjs/
 │   ├── specialists/page.tsx
 │   ├── spine/page.tsx       → SpecialityPage(slug="spine-joint")
 │   ├── skin/page.tsx        → SpecialityPage(slug="skin")
-│   ├── wellness/page.tsx    → SpecialityPage(slug="wellness")
 │   ├── family/page.tsx      → SpecialityPage(slug="geriatric")
 │   ├── gallery/page.tsx
 │   ├── testimonials/page.tsx
@@ -48,4 +47,4 @@ Visit http://localhost:3000.
   - Accents: `accent-sage` (default green), `accent-forest`, `accent-teal`, `accent-olive`
   - Serif: (default Cormorant), `serif-playfair`, `serif-eb`
 - Booking modal state is global via `BookingProvider` — call `openBooking()` or `openBooking(slug)` from any client component.
-- All pages that use state or context are marked `"use client"`. The two speciality-index wrappers (`spine`, `skin`, `wellness`, `family`) are server components that render the client `SpecialityPage`.
+- All pages that use state or context are marked `"use client"`. The speciality-index wrappers (`spine`, `skin`, `family`) are server components that render the client `SpecialityPage`.

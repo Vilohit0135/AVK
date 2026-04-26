@@ -17,7 +17,7 @@
 export type Speciality = {
   slug: string;
   name: string;
-  icon: "spine" | "skin" | "wellness" | "family";
+  icon: "spine" | "skin" | "family";
   route: string;
   tagline: string;
   short: string;
@@ -46,17 +46,9 @@ export const specialities: Speciality[] = [
   {
     slug: "skin", name: "Skin Ailments", icon: "skin", route: "skin",
     tagline: "Chronic, recurring and stress-linked skin conditions — treated from the root.",
-    short: "Root-cause treatment for stubborn and chronic skin conditions — through internal purification, Marma therapy and gentle herbal applications.",
-    long: "At AVK, skin conditions are approached as expressions of internal imbalance — often linked to heat, toxins (ama), stress or digestive weakness. Our treatment purifies the blood, rebalances doshas and strengthens immunity through personalized herbal formulations, Marma therapy and gentle external applications — delivering lasting results even in chronic and recurring cases.",
+    short: "Root-cause treatment for stubborn and chronic skin conditions — through internal purification with medications and root cause treatment.",
+    long: "At AVK, skin conditions are approached as expressions of internal imbalance — often linked to heat, toxins (ama), stress or digestive weakness. Our treatment purifies the blood, rebalances doshas and strengthens immunity through personalized herbal formulations, internal purification with medications and root cause treatment — delivering lasting results even in chronic and recurring cases.",
     conds: ["Eczema", "Psoriasis", "Dermatitis", "Vitiligo", "Urticaria", "Allergies", "Acne", "Scars", "Chronic Itching"],
-    approach: fiveStageApproach,
-  },
-  {
-    slug: "wellness", name: "Women & Men Wellness", icon: "wellness", route: "wellness",
-    tagline: "Hormonal balance, stress and vitality — for adults 25 to 60.",
-    short: "Personalized care for hormonal, stress and vitality concerns — designed for long-term wellbeing, not short-term relief.",
-    long: "Our wellness programme supports hormonal balance, stress management and energy restoration for both women and men. Through Marma therapy, classical herbal formulations and tailored lifestyle guidance, we address the root causes behind modern concerns — PCOS, stress, fatigue, disturbed sleep and declining vitality. Every protocol is built for the individual; nothing is standardised.",
-    conds: ["PCOS & hormonal imbalance", "Menstrual & menopausal health", "Stress, anxiety & sleep", "Energy, stamina & vitality", "Weight & metabolic health", "Digestive health & detox"],
     approach: fiveStageApproach,
   },
   {
@@ -70,7 +62,7 @@ export const specialities: Speciality[] = [
 ];
 
 export const specialists = [
-  { name: "Dr. Akshata Shetty", role: "BAMS · Chief Physician", focus: "Spine & Joint · Skin Ailments · Women & Men Wellness · Family Medicine", bio: "Fifteen years of clinical Ayurveda, with expertise across musculoskeletal conditions, chronic skin ailments, hormonal health, and general family practice. Studied at SDM Hassan and secured her BAMS degree from Rajiv Gandhi University of Health Sciences. Dr. Akshata brings a classical, patient-first approach to every consultation — combining pulse diagnosis, Marma therapy, personalized herbal formulations and authentic Bandana Chikitsa.", years: "15 yrs" },
+  { name: "Dr. Akshata Shetty", role: "BAMS · Chief Physician", focus: "Spine & Joint · Skin Ailments · Family Medicine", bio: "Fifteen years of clinical Ayurveda, with expertise across musculoskeletal conditions, chronic skin ailments, hormonal health, and general family practice. Studied at SDM Hassan and secured her BAMS degree from Rajiv Gandhi University of Health Sciences. Dr. Akshata brings a classical, patient-first approach to every consultation — combining pulse diagnosis, Marma therapy, personalized herbal formulations and authentic Bandana Chikitsa.", years: "15 yrs" },
 ];
 
 export const testimonials = [
@@ -504,7 +496,6 @@ export const navPrimary: [string, string][] = [
   ["/specialists", "Specialists"],
   ["/spine", "Spine & Joint"],
   ["/skin", "Skin"],
-  ["/wellness", "Wellness"],
   ["/family", "Family Care"],
   ["/gallery", "Gallery"],
   ["/contact", "Contact"],
@@ -516,7 +507,6 @@ export const navAll: [string, string][] = [
   ["/specialists", "Our Specialists"],
   ["/spine", "Spine & Joint"],
   ["/skin", "Skin Ailments"],
-  ["/wellness", "Wellness"],
   ["/family", "Geriatric & Family"],
   ["/gallery", "Gallery"],
   ["/testimonials", "Reviews"],

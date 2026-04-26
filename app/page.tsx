@@ -83,7 +83,7 @@ export default function HomePage() {
                 Healing that reaches deeper.<br/>Relief that <span className="em">lasts longer.</span>
               </motion.h1>
               <motion.p className="hero-sub" initial="hidden" animate="visible" custom={2} variants={fadeUp}>
-                Non-surgical Ayurvedic care for Spine &amp; Joint, Skin, Wellness and Geriatric concerns — through classical Marma therapy, herbal bandaging and personalized protocols.
+                Non-surgical Ayurvedic care for Spine &amp; Joint, Skin and Geriatric concerns — through classical Marma therapy, herbal bandaging and personalized protocols.
               </motion.p>
               <motion.div className="hero-ctas" initial="hidden" animate="visible" custom={3} variants={fadeUp}>
                 <WhatsAppCTA size="lg"/>
@@ -146,10 +146,10 @@ export default function HomePage() {
             style={{ display: "flex", alignItems: "end", justifyContent: "space-between", marginBottom: 40, gap: 20, flexWrap: "wrap" }}
             initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} variants={fadeUp} custom={0}
           >
-            <div><Kicker>Our four specialities</Kicker><h2>What we treat,<br/>and how deeply.</h2></div>
+            <div><Kicker>Our three specialities</Kicker><h2>What we treat,<br/>and how deeply.</h2></div>
             <p style={{ maxWidth: "42ch", color: "var(--ink-3)", margin: 0 }}>Every speciality below is led by Dr. Akshata Shetty and supported by trained therapists and an in-house pharmacy.</p>
           </motion.div>
-          <motion.div className="grid-2" style={{ gap: 20 }} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={staggerContainer}>
+          <motion.div className="grid-3" style={{ gap: 20 }} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={staggerContainer}>
             {specialities.map((s) => (
               <motion.div key={s.slug} variants={staggerItem}>
                 <Link href={"/" + s.route} className="spec-card" style={{ textDecoration: "none" }}>

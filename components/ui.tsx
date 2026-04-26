@@ -30,7 +30,6 @@ const PH_IMAGES: Record<string, string> = {
   "clinic, 2008": "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=600&h=750&fit=crop",
   "spine & joint therapy": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&h=750&fit=crop",
   "skin ailments therapy": "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600&h=750&fit=crop",
-  "women & men wellness therapy": "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=600&h=750&fit=crop",
   "geriatric care & family medicine therapy": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=750&fit=crop",
   "reception & waiting area": "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=600&h=400&fit=crop",
   "consultation room": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&h=400&fit=crop",
